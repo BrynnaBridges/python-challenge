@@ -44,10 +44,11 @@ with open(pypoll_csv, 'r') as csvfile:
         countsss = countsss + (candidate.count("Li"))
         countssss = countssss + (candidate.count("O'Tooley"))
 #Formula for finding percent value
-    Percent_Khan = (count/voter)*100
-    Percent_Correy = (countss/voter)*100
-    Percent_Li = (countsss/voter)*100
-    Percent_O = (countssss/voter)*100
+    Percent_Khan = (round((count/voter)*100))
+    Percent_Correy = (round((countss/voter)*100))
+    Percent_Li = (round((countsss/voter)*100))
+    Percent_O = (round((countssss/voter)*100))
+
 
 #Create Lists to be zipped
 candididates_list = ["Khan", "Correy", "Li", "O'Tooley"]
